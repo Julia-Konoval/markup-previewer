@@ -1,5 +1,6 @@
-html {
+.container {
   background-color: rgb(31, 31, 69);
+  height: 100vh;
 }
 .header {
   display: flex;
@@ -25,8 +26,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100vh;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .preview-container {
@@ -47,6 +48,7 @@ html {
     -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
     12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
     -10px -7px 27px 1px #8e5cff, 50px -26px 0px 50px rgba(255, 255, 255, 0);
+  border: 1px solid black;
 }
 textarea {
   width: 500px;
@@ -66,10 +68,16 @@ textarea {
 }
 
 .preview {
-  border: 1px solid black;
   height: 500px;
   background-color: aliceblue;
   color: black;
+}
+.reset-btn {
+  margin-left: 47%;
+  padding: 10px;
+  width: 100px;
+  color: aliceblue;
+  background-color: rgb(6, 4, 27);
 }
 @media only screen and (max-width: 848px) {
   .wrapper {
@@ -91,7 +99,7 @@ textarea {
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 10px;
   }
 

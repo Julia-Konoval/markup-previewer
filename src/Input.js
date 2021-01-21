@@ -9,8 +9,12 @@ const Input = () => {
   function updateMarkdown(inputValue) {
     setMarkdown(inputValue);
   }
+  function onClickHandler() {
+    setMarkdown("");
+  }
+
   return (
-    <div>
+    <div className="container">
       <div className="header">
         <h1 className="header-main">Markdown</h1>{" "}
         <p className="header-p">previewer</p>
@@ -42,6 +46,9 @@ const Input = () => {
           ></div>
         </div>
       </div>
+      <button className="reset-btn" onClick={onClickHandler}>
+        Reset
+      </button>
     </div>
   );
 };
